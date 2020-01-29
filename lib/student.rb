@@ -29,9 +29,9 @@ attr_accessor :id, :name, :grade
  end
 
  def save
-  # if self.id
-  #   self.update
-  # else
+   if self.id
+     self.update
+   else
   sql = <<-SQL
     INSERT INTO students (name, grade)
     VALUES (?,?)
