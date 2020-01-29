@@ -32,6 +32,7 @@ attr_accessor :id, :name, :grade
    if self.id
      self.update
    else
+   end 
   sql = <<-SQL
     INSERT INTO students (name, grade)
     VALUES (?,?)
